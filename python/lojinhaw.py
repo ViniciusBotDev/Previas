@@ -123,3 +123,4 @@ while voltar == "voltar":
                     elif saldo <= "3199":
                         print("Voçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.")
                         voltar = "voltar"
+                        
