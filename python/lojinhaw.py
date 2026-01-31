@@ -122,4 +122,3 @@ while voltar == "voltar":
                     else:
                         print("Voçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.")
                         voltar = "voltar"
-                        
