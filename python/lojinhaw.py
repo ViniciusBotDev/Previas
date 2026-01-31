@@ -1,6 +1,6 @@
 import sys
 import os
-
+ 
 voltar = "voltar"
 comprar = "comprar"
 print("Deseja entrar na loja de PC's? ")
