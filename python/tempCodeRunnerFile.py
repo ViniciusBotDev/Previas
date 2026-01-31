@@ -1,0 +1,1 @@
+print('Contador de Médias')

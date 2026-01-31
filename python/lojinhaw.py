@@ -1,17 +1,16 @@
 import sys
 
-saldo = float
 voltar = "voltar"
 comprar = "comprar"
 print("Deseja entrar na loja de PC's? ")
 entrar = input("[S/N]  ")
-if entrar == "s" or entrar == "S":
+if entrar.lower() in ["s", "sim"]:
     print("\033[1mVoçe entrou na loja de Pc's!\033[0ms")
     print("\033[1mAgora voçe pode escolher algum Pc\033[0ms")
 else:
     sys.exit(print("Voçe foi embora "))
 
-saldo = input("Digite qual seu saldo R$")
+saldo = float(input("Digite qual seu saldo R$"))
 
 print(f"Seu saldo agora é R${saldo}")
 
@@ -19,7 +18,7 @@ while voltar == "voltar":
      
     print("Qual voçe deseja escolher? Escolha e veja as configs!")
 
-    op = input("1/2/3/4/5 ou caso queira sair digite: sair  ")
+    op = input("1/2/3/4/5 ou caso queira sair digite: sair  ").strip().lower()
     if op == "sair":
         sys.exit(print("Obrigado por visitar nossa loja!"))
     match op:
@@ -36,11 +35,11 @@ while voltar == "voltar":
             if voltar == "comprar":
                 print(f"Voçe deseja comprar esse Pc? seu saldo é R${saldo}  ")
                 comprar = input("Digite [S/N]  ")
-                if comprar == "sim" or comprar == "S" or comprar == "Sim":
+                if comprar.lower() in ["s", "sim"]:
                     if saldo >= "7000":
                         print("Parabéns pela compra!")
                         sys.exit(print("Obrigado por visitar nossa loja!"))
-                    elif saldo <= "6999":
+                    else:
                         print("Voçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.")
                         voltar = "voltar"
         case "2":
@@ -60,7 +59,7 @@ while voltar == "voltar":
                     if saldo >= "4000":
                         print("Parabéns pela compra!")
                         sys.exit(print("Obrigado por visitar nossa loja!"))
-                    elif saldo <= "3999":
+                    else:
                         print("Voçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.")
                         voltar = "voltar"
         case "3":
@@ -80,7 +79,7 @@ while voltar == "voltar":
                     if saldo >= "3000":
                         print("Parabéns pela compra!")
                         sys.exit(print("Obrigado por visitar nossa loja!"))
-                    elif saldo <= "2999":
+                    else:
                         print("Voçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.")
                         voltar = "voltar"
         case "4":
@@ -100,7 +99,7 @@ while voltar == "voltar":
                     if saldo >= "3500":
                         print("Parabéns pela compra!")
                         sys.exit(print("Obrigado por visitar nossa loja!"))
-                    elif saldo <= "3499":
+                    else:
                         print("Voçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.")
                         voltar = "voltar"
         case "5":
@@ -120,7 +119,7 @@ while voltar == "voltar":
                     if saldo >= "3200":
                         print("Parabéns pela compra!")
                         sys.exit(print("Obrigado por visitar nossa loja!"))
-                    elif saldo <= "3199":
+                    else:
                         print("Voçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.")
                         voltar = "voltar"
                         
