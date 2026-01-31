@@ -1,1 +1,0 @@
-print('Contador de Médias')
