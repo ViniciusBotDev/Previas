@@ -2,7 +2,7 @@ opcao = 's'
 num = int
 
 while opcao in ['s', 'sim']:
-
+ 
     num = int(input('Digite um numero na qual deseja ver a tabuada: '))
     print('=' * 13)
     print(f'{num} x {1:2} = {num*1}')
