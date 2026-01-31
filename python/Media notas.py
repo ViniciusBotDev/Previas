@@ -23,5 +23,5 @@ while desejo in ['s', 'sim']:
         print('Cuidado da Próxima vez, melhore!')
     else:
         print('Voçe não consegiu, melhore da próxima')
-    desejo = input('Deseja continuar? [S/N]').strip().lower()
+    desejo = input('Deseja continuar? [S/N] ').strip().lower()
     
