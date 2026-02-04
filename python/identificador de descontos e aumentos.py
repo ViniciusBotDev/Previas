@@ -123,3 +123,5 @@ while opçao in ['n', 'não']:
                     print('Ok voltando...')
                     opçao = 'n'
                     
+print('Obrigado por Visitar a loja')
+                    
