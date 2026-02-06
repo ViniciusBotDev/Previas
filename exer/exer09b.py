@@ -1,7 +1,7 @@
 from math import radians, cos, sin, tan
 
 angulo = float(input('Digite o ângulo que voçe deseja: '))
-radianos = math.radians(angulo)
+radianos = radians(angulo)
 
 seno = sin(radianos)
 cosseno = cos(radianos)
