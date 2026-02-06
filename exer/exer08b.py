@@ -1,9 +1,9 @@
-import random
+from random import shuffle, choice
 
-nomes = input('Digite os 4 nomes separados por espaço:  ').split()
+lista = input('Digite os 4 nomes separados por espaço:  ').split()
 
-escolhido = random.choice(nomes)
+escolhido = choice(lista)
 print(f'O nome escolhido para apagar o quadro foi {escolhido}')
 
-random.shuffle(nomes)
-print(f'E a ordem de apresentação é {', '.join(nomes)}')
+shuffle(lista)
+print(f'E a ordem de apresentação é {', '.join(lista)}')
