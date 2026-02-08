@@ -1,0 +1,10 @@
+nome = str(input('Escreva seu nome completo:  ')).strip()
+nomes_separados = nome.split()
+
+print('Analisando seu nome...')
+print(f'Seu nome com todas maiusculas: {nome.upper()}')
+print(f'Seu nome com todas minusculas: {nome.lower()}')
+print(f'Seu nome tem: {(len(nome) - nome.count(' '))} letras')
+#print(f'Seu primeiro nome tem {(nome.find(' '))} letras')
+print(f'Seu primeiro nome: {nomes_separados[0]} ele tem {len(nomes_separados[0])} letras')
+print(f'Seu primeiro nome é: {nomes_separados[0]}, e seu ultimo nome é: {(nomes_separados[len(nomes_separados)-1])}')
