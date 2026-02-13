@@ -16,12 +16,12 @@ while desejo in ['s', 'sim']:
 
     print(f'Sua nota média final é {nota:.1f}')
     if nota >= 9.0:
-        print('Parabéns sua nota está otima')
+        print('\033[1;32mParabéns sua nota está otima!\033[m')
     elif nota >= 7.0:
-        print('Está bom mas pode ser melhor!')
+        print('\033[1;34mEstá bom mas pode ser melhor!\033[m')
     elif nota >= 6.0:
-        print('Cuidado da Próxima vez, melhore!')
+        print('\033[1;33mCuidado da Próxima vez, melhore!\033[m')
     else:
-        print('Voçe não consegiu, melhore da próxima')
+        print('\033[1;31mVoçe não consegiu a média, melhore da próxima\033[m')
     desejo = input('Deseja continuar? [S/N] ').strip().lower()
     
