@@ -1,6 +1,7 @@
 import sys
 import os
-  
+from time import sleep
+
 voltar = "voltar"
 comprar = "comprar"
 print("Deseja entrar na loja de PC's? ")
@@ -18,7 +19,7 @@ print(f"Seu saldo agora é R${saldo}")
 while voltar == "voltar":
     print("Qual voçe deseja escolher? Escolha e veja as configs!")
 
-    op = input("1/2/3/4/5 ou caso queira sair digite: sair  ").strip().lower()
+    op = input("  1/2/3/4/5 ou caso queira sair digite: sair  ").strip().lower()
     if op == "sair" or op == 's':
         sys.exit(print("Obrigado por visitar nossa loja!"))
     match op:
@@ -37,10 +38,10 @@ while voltar == "voltar":
                 comprar = input("Digite [S/N] ").strip().lower()
                 if comprar in ["s", "sim"]:
                     if saldo >= 7000:
-                        print("Parabéns pela compra!")
+                        print("\033[1;32mParabéns pela compra!\033[m")
                         sys.exit(print("Obrigado por visitar nossa loja!"))
                     else:
-                        print("Voçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.")
+                        print("\033[1;31mVoçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.\033[m")
                         voltar = "voltar"
         case "2":
             print("Pc 2")
@@ -57,10 +58,10 @@ while voltar == "voltar":
                 comprar = input("Digite [S/N] ").strip().lower()
                 if comprar in ['s', 'sim']:
                     if saldo >= 4000:
-                        print("Parabéns pela compra!")
+                        print("\033[1;32mParabéns pela compra!\033[m")
                         sys.exit(print("Obrigado por visitar nossa loja!"))
                     else:
-                        print("Voçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.")
+                        print("\033[1;31mVoçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.\033[m")
                         voltar = "voltar"
         case "3":
             print("Pc 3")
@@ -77,10 +78,10 @@ while voltar == "voltar":
                 comprar = input("Digite [S/N] ").strip().lower()
                 if comprar in ['s', 'sim']:
                     if saldo >= 3000:
-                        print("Parabéns pela compra!")
+                        print("\033[1;32mParabéns pela compra!\033[m")
                         sys.exit(print("Obrigado por visitar nossa loja!"))
                     else:
-                        print("Voçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.")
+                        print("\033[1;31mVoçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.\033[m")
                         voltar = "voltar"
         case "4":
             print("Pc 4")
@@ -97,10 +98,10 @@ while voltar == "voltar":
                 comprar = input("Digite [S/N] ").strip().lower()
                 if comprar in ['s', 'sim']:
                     if saldo >= 3500:
-                        print("Parabéns pela compra!")
+                        print("\033[1;32mParabéns pela compra!\033[m")
                         sys.exit(print("Obrigado por visitar nossa loja!"))
                     else:
-                        print("Voçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.")
+                        print("\033[1;31mVoçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.\033[m")
                         voltar = "voltar"
         case "5":
             print("Pc 5")
@@ -117,8 +118,8 @@ while voltar == "voltar":
                 comprar = input("Digite [S/N] ").strip().lower()
                 if comprar in ['s', 'sim']:
                     if saldo >= 3200:
-                        print("Parabéns pela compra!")
+                        print("\033[1;32mParabéns pela compra!\033[m")
                         sys.exit(print("Obrigado por visitar nossa loja!"))
                     else:
-                        print("Voçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.")
+                        print("\033[1;31mVoçe não tem o saldo suficiente. Escolha um Pc de acordo com seu orçamento.\033[m")
                         voltar = "voltar"
