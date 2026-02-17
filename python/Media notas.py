@@ -1,6 +1,6 @@
 import os
 
-desejo = 's'
+opção = 's'
 
 while desejo in ['s', 'sim']:
     
@@ -21,7 +21,9 @@ while desejo in ['s', 'sim']:
         print('\033[1;34mEstá bom mas pode ser melhor!\033[m')
     elif nota >= 6.0:
         print('\033[1;33mCuidado da Próxima vez, melhore!\033[m')
+    elif nota >= 5:
+        print('\033[1;33mVoçe está de recuperação!\033[m')
     else:
         print('\033[1;31mVoçe não consegiu a média, melhore da próxima\033[m')
-    desejo = input('Deseja continuar? [S/N] ').strip().lower()
+    opção = input('Deseja continuar? [S/N] ').strip().lower()
     
