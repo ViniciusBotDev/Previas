@@ -1,3 +1,4 @@
+print(f'{' LOJA ':=^40}')
 Preço_compras = float(input('Preço das compras: R$'))
 Forma = int(input('''FORMAS DE PAGAMENTO
 [ 1 ] á vista dinheiro/pix
