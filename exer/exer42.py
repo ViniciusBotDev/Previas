@@ -1,23 +1,44 @@
 import random
 from time import sleep
 
-lista = ('Pedra Papel Tesoura').split()
+lista = ('Pedra', 'Papel', 'Tesoura')
+computador = random.randint(0, 2)
 print('Faça sua escolha entre Pedra, Papel e Tesoura')
-sua_escolha = str(input('Faça sua escolha:  ')).strip().lower()
-escolha_maquina = random.choice(lista)
+print('''Faça sua escolha:'
+[ 0 ] Pedra
+[ 1 ] Papel
+[ 2 ] Tesoura''')
+sua_escolha = int(input('Qual é a sua jogada?  '))
 print('Jogando..')
+print('-=' * 15)
 sleep(2)
-if sua_escolha == 'papel' and escolha_maquina == 'Pedra':
-    print(f'Voce ganhou a maquina escolheu {escolha_maquina}')
-elif sua_escolha == 'pedra' and escolha_maquina == 'Tesoura':
-    print(f'Voçe ganhou a maquina escolheu {escolha_maquina}')
-elif sua_escolha == 'tesoura' and escolha_maquina == 'Papel':
-    print(f'Voçe ganhou a maquina escolheu {escolha_maquina}')
-elif escolha_maquina == 'Papel' and sua_escolha == 'pedra':
-    print(f'Voçe perdeu a maquina escolheu {escolha_maquina}')
-elif escolha_maquina == 'Pedra' and sua_escolha == 'tesoura':
-    print(f'Voçe perdeu a maquina escolheu {escolha_maquina}')
-elif escolha_maquina == 'Tesoura' and sua_escolha == 'papel':
-    print(f'Voçe perdeu a maquina escolher {escolha_maquina}')
+print(f'Computador {(lista[computador])}')
+print(f'Jogador {(lista[sua_escolha])}')
+print('-=' * 15)
+if computador == 0: 
+    if sua_escolha == 0:
+        print('EMPATE!')
+    elif sua_escolha == 1:
+        print('Jogador Ganhou!')
+    elif sua_escolha == 2:
+        print('Computador ganhou!')
+    else:
+        print('Jogada inválida..')
+elif computador == 1: 
+    if sua_escolha == 0:
+        print('Computador ganhou!')
+    elif sua_escolha == 1:
+        print('EMPATE!')
+    elif sua_escolha == 2:
+        print('Jogador ganhou!')
+    else:
+        print('Jogada inválida..')
+elif computador == 2: 
+    if sua_escolha == 0:
+        print('Jogador ganhou!')
+    elif sua_escolha == 1:
+        print('Computador ganhou!')
+    elif sua_escolha == 2:
+        print('EMPATE!')
 else:
     print('Voçe escolheu algo inválido...')
