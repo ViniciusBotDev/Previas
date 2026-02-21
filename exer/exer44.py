@@ -4,4 +4,5 @@ print('Os fogos vão estourar em 10 segundos!')
 for c in range(10, 0, -1):
     print(c)
     sleep(1)
+sleep(0.5)
 print('Fogos estourando!!')
