@@ -1,0 +1,19 @@
+# 1. LISTA E DICIONÁRIO
+alunos = [] # A caixa grande
+
+while True:
+    # 2. ENTRADA
+    nome = input("Nome: ")
+    if nome == 'sair': break # SAÍDA DO LOOP
+    
+    nota = float(input("Nota: "))
+    
+    # 3. CRIAÇÃO DO DICIONÁRIO (Etiqueta: Valor)
+    ficha = {"nome": nome, "nota": nota}
+    
+    # 4. GUARDAR NA LISTA
+    alunos.append(ficha)
+
+# 5. PERCORRER TUDO
+for a in alunos:
+    print(f"Aluno: {a['nome']} - Nota: {a['nota']}")
