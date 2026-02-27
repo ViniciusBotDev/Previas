@@ -20,3 +20,4 @@ print('-'*15, 'FIM DO PROGRAMA', '-'*15)
 print(f'''O total gasto da compra foi R${total_gasto:.2f}
 Temos {produtos1000} produtos custando mais de R$1000.00
 O produto mais barato foi {produtomaisbarato} que custou R${menor_preço}''')
+ 
