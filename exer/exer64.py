@@ -26,4 +26,3 @@ while True:
         print('GAME OVER!')
         print(f'Voçe venceu {vitorias} vezes')
         break
-    
