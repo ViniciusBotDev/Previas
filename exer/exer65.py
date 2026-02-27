@@ -24,3 +24,4 @@ print('='*5,' FIM DO PROGRAMA ','='*5)
 print(f'''Total de pessoas com mais de 18 anos: {total_pessoas18}
 Ao todo temos {total_homens} homens cadastrados
 E temos {total_mulheres20} com menos de 20 anos''')
+ 
