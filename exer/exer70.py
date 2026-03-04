@@ -1,0 +1,5 @@
+tabela = ('Palmeiras','São Paulo','Corinthians','Bahia','Fluminense','Athletico-PR','Bragantino','Grêmio','Chapecoense','Mirassol','Flamengo','Coritiba','Santos','Botafogo','EC Vitória,Remo','Atlético-MG','Internacional', 'Cruzeiro', 'Vasco da Gama')
+print(f'Times do brasileirão: {tabela}')
+print(f'Os 5 primeiros são: {tabela[0:6]}')
+print(f'Os 4 ultimos são: {tabela[15:]}')
+print(f'Em ordem alfabetica: {sorted(tabela)}')
