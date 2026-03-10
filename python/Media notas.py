@@ -1,10 +1,5 @@
-import os
-
 opção = 's'
-
-while desejo in ['s', 'sim']:
-    
-    os.system('cls' if os.name == 'nt' else 'clear')
+while opção in ['s', 'sim']:
 
     print('Contador de Médias')
 
